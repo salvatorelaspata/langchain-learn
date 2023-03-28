@@ -1,0 +1,17 @@
+{
+  "name": "langchain-learn",
+  "version": "1.0.0",
+  "description": "[JS Doc](https://js.langchain.com/docs/) [Python Doc](https://python.langchain.com/en/latest/)",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "langchain": "^0.0.43"
+  }
+}
