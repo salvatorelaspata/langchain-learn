@@ -45,7 +45,7 @@ Per installare langchain in Python, è necessario utilizzare pip:
 pip install langchain
 ```
 
-## src/1-quick-start.js
+## src/1-\*.js
 
 Questo esempio mostra come utilizzare langchain in JavaScript.
-E' possibile trovare questo esempio in [src/1-quick-start.js](
+E' possibile trovare questo esempio in [src/1-quick-start.js](src/1-quick-start.js)
