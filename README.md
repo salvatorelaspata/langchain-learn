@@ -1,12 +1,3 @@
-# Table of Contents
-
-- [langchain](#langchain)
-  - [inspirazione](#inspirazione)
-  - [Come funziona](#come-funziona)
-  - [Qualche esempio](#qualche-esempio)
-- [Come usare langchain](#come-usare-langchain)
-  - [Installazione](#installazione)
-
 # langchain
 
 [JS Doc](https://js.langchain.com/docs/)
@@ -45,7 +36,57 @@ Per installare langchain in Python, è necessario utilizzare pip:
 pip install langchain
 ```
 
-## src/1-\*.js
+## /src/1-quick-start.js
+
+[src/1-quick-start.js](src/1-quick-start.js)
 
 Questo esempio mostra come utilizzare langchain in JavaScript.
-E' possibile trovare questo esempio in [src/1-quick-start.js](src/1-quick-start.js)
+
+## /src/2-prompt-templates.js
+
+[src/2-prompt-templates.js](src/2-prompt-templates.js)
+
+Questo esempio mostra l'implementazione del Prompt Templates.
+
+## /src/3-chain.js
+
+[src/3-chain.js](src/3-chain.js)
+
+Questo esempio esplica la combinazione tra Prompt Templates e LMMChain.
+
+## /src/4-agents.js
+
+[src/4-agents.js](src/4-agents.js)
+
+Questo esempio mostra come utilizzare gli agenti per generare nuove frasi. In particolare viene creato un agent che, oltre ad utilizzare OpenAI, utilizza i tools Serp e Calculator.
+
+## /src/5-memory.js
+
+[src/5-memory.js](src/5-memory.js)
+
+Questo esempio mostra come utilizzare la memoria per generare nuove frasi.
+
+## /src/6-streaming.js
+
+[src/6-streaming.js](src/6-streaming.js)
+
+Implementazione streaming di langchain OpenAI.
+
+## /src/7-chat-models.js
+
+[src/7-chat-models.js](src/7-chat-models.js)
+
+Explore Chat Models. In particolare, viene utilizzato il modello di chat GPT-3.5-turbo.
+Vengono anche utilizzati langchain/schema per definire gli attori della chat.
+
+## /src/8-embeddings.js
+
+[src/8-embeddings.js](src/8-embeddings.js)
+
+Rappresentazione delle frasi in spazio vettoriale. In particolare, viene utilizzato il modello di embedding di OpenAI.
+
+## /src/9-llms.js
+
+[src/9-llms.js](src/9-llms.js)
+
+Langchain Language Models. Esempio.
