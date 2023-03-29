@@ -1,11 +1,9 @@
-import { OpenAI } from 'langchain'
-
-import { default as dotenv } from 'dotenv'
-
-dotenv.config()
-
-const chat = new OpenAI({
+import { openai } from './instances/openai.js'
+import { CallbackManager } from 'langchain/callbacks'
+import { HumanChatMessage } from 'langchain/schema.js'
+const chat = openai({
   streaming: true,
+  maxTokens: 25,
   callbackManager: CallbackManager.fromHandlers({
     async handleLLMNewToken(token) {
       console.log(token)
@@ -13,5 +11,7 @@ const chat = new OpenAI({
   }),
 })
 
-const response = await chat.call('Write me a song about sparkling water.')
+const response = await chat.call([
+  new HumanChatMessage('Write me a song about sparkling water.'),
+])
 console.log(response)

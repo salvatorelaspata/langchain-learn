@@ -5,7 +5,13 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "test:1": "node src/1-quick-start.js",
+    "test:2": "node src/2-prompt-templates.js",
+    "test:3": "node src/3-chains.js",
+    "test:4": "node src/4-agents.js",
+    "test:5": "node src/5-memory.js",
+    "test:6": "node src/6-streaming.js"
   },
   "keywords": [],
   "author": "",

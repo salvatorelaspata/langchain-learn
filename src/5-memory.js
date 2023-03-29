@@ -1,8 +1,8 @@
-import { OpenAI } from 'langchain/llms'
 import { BufferMemory } from 'langchain/memory'
 import { ConversationChain } from 'langchain/chains'
+import { openai } from './instances/openai.js'
 
-const model = new OpenAI({})
+const model = openai()
 const memory = new BufferMemory()
 const chain = new ConversationChain({ llm: model, memory: memory })
 

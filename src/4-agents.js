@@ -1,8 +1,8 @@
-import { OpenAI } from 'langchain'
 import { initializeAgentExecutor } from 'langchain/agents'
 import { SerpAPI, Calculator } from 'langchain/tools'
+import { openai } from './instances/openai.js'
 
-const model = new OpenAI({ temperature: 0 })
+const model = openai({ temperature: 0 })
 const tools = [new SerpAPI(), new Calculator()]
 
 const executor = await initializeAgentExecutor(
@@ -10,6 +10,7 @@ const executor = await initializeAgentExecutor(
   model,
   'zero-shot-react-description'
 )
+
 console.log('Loaded agent.')
 
 const input =
