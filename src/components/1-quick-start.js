@@ -1,6 +1,6 @@
 // LLMs: ottieni previsioni da un modello linguistico
-import { openai } from './instances/openai.js'
-import { readlineCli } from './instances/readlineCli.js'
+import { openai } from '../instances/openai.js'
+import { readlineCli } from '../instances/readlineCli.js'
 // Carica le variabili d'ambiente
 
 // Crea un'istanza di OpenAI
